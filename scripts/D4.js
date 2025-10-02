@@ -146,6 +146,14 @@ console.log(upperFirst("epicode"))
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const cutString = function(string){
+    let world = string
+    world = world.slice(1, string.length -1)
+    return world
+}
+console.log(cutString("epicode"))
+
+
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
