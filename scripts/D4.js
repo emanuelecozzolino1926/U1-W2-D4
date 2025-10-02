@@ -112,6 +112,14 @@ console.log(check3and7(10)) // false (non multiplo di 3 o 7)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const reverseString = function(string) {
+    let revString = string.split("")
+    revString = revString.reverse().join("")
+    return revString
+}
+
+console.log(reverseString("EPICODE")) // "EDOCIPE"
+
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
