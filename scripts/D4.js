@@ -4,6 +4,13 @@
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const area = function(l1, l2){
+    let risultato = l1 * l2
+    return risultato
+}
+
+console.log(area(6,7))
+
 /* ESERCIZIO 2
  Scrivi una funzione di nome "crazySum", che riceve due numeri interi come parametri.
  La funzione deve ritornare la somma dei due parametri, ma se il valore dei due parametri è il medesimo deve invece tornare
