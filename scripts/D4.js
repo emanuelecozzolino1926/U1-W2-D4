@@ -47,14 +47,19 @@ console.log(crazySum(5, 5))
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 const boundary = function(n){
-    if (n >= 20 && n <= 100 || n === 400){
+    if(!Number.isInteger(n)){
+    return false
+    }else if (n >= 20 && n <= 100 || n === 400){
         return true
     } else {
         return false
     }
 }
 
-console.log(boundary(400))
+console.log(boundary(400))   
+console.log(boundary(62))
+console.log(boundary(13))
+console.log(boundary("50"))
 
 
 /* ESERCIZIO 5
@@ -65,6 +70,17 @@ console.log(boundary(400))
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const epify = function(string) {
+  if (string.toUpperCase().startsWith("EPICODE")) {
+    return string
+  } else {
+    return "EPICODE " + string
+  }
+}
+
+console.log(epify("EPICODE è fantastico"))
+console.log(epify("epicode"))
+console.log(epify("Non inizio con epicode"))
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
  di 3 o di 7. (Suggerimento: usa l'operatore modulo)
