@@ -159,3 +159,13 @@ console.log(cutString("epicode"))
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const giveMeRandom = function(n) {
+  let arr = []
+  for (let i = 0; i < n; i++) {
+    let randomNum = Math.floor(Math.random() * 11)
+    arr.push(randomNum)
+  }
+  return arr
+}
+console.log(giveMeRandom(5)) 
+console.log(giveMeRandom(10))
