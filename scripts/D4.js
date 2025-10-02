@@ -39,6 +39,16 @@ console.log(crazySum(5, 5))
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const crazyDiff = function (num) {
+  if (num > 19) {
+    let difference = (num - 19) * 3;
+    return difference;
+  } else {
+    let difference = num - 19;
+    return difference;
+  }
+};
+
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
  se n è uguale a 400.
