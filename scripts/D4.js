@@ -46,6 +46,17 @@ console.log(crazySum(5, 5))
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const boundary = function(n){
+    if (n >= 20 && n <= 100 || n === 400){
+        return true
+    } else {
+        return false
+    }
+}
+
+console.log(boundary(400))
+
+
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
  La funzione deve aggiungere la parola "EPICODE" all'inizio della stringa fornita, ma se la stringa fornita comincia già con "EPICODE" allora deve
