@@ -118,14 +118,26 @@ const reverseString = function(string) {
     return revString
 }
 
-console.log(reverseString("EPICODE")) // "EDOCIPE"
-
+console.log(reverseString("EPICODE"))
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+const upperFirst = function(string) {
+  let words = string.split(" ")
+
+  for (let i = 0; i < words.length; i++) {
+    let word = words[i]
+    words[i] = word.charAt(0).toUpperCase() + word.slice(1)
+  }
+
+  return words.join(" ")
+}
+
+console.log(upperFirst("epicode"))
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
